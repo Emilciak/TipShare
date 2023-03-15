@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+	width: 400px;
+	border-radius: 20px;
+    margin: 20px;
+	background-image: url("./img/bgc.jpg");
+}
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background-color: #dac69a;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 26px;
+	color: rgb(109, 90, 14);
+}
+.body {
+	padding: 40px 20px;
+}
+input, select {
+	margin-bottom: 20px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid rgb(198, 180, 106);
+
+}
+label {
+    display: block;
+	margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.btn {
+    display: block;
+	width: 60%;
+	padding: 5px;
+	margin: 20px auto;
+    padding: 10px 10px;
+    background-color:#dac69a;
+    border-radius: 10px;
+    font-size:17px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: rgb(109, 90, 14);
+    transition: background-color .3s;
+}
+
+.btn:hover{
+    background-color:#c1ac7f;
+}
+
+.bill-info{
+    display: none;
+    font-size: 20px;
+    text-align: center;
+
+}
+.cost{
+    font-weight: bold;
+}
+
+.error{
+    font-size: 19px;
+    color:rgb(202, 37, 8);
+    text-align: center;
+}

@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+     <div class="wrapper">
+        <div class="header">
+            <h1>Tip Calculator</h1>
+        </div>
+        <div class="body">
+        <label for="money">Bill Amount</label>
+        <input type="number" id="money">
+        <label for="people">Number of people</label>
+        <input type="number" id="people">
+        <label for="tip">Tip</label>
+        <select id="tip">
+        <option value="0" disabled selected> --choose a tip--</option>
+        <option value="0.05">5%</option>
+        <option value="0.1">10%</option>
+        <option value="0.15">15%</option>
+        <option value="0.2">20%</option>
+    </select>
+    <button class="btn">Calculate</button>
+    <p class="error"></p>
+    <p class="bill-info">Total Bill per Person <span class="cost"></span>$</p>
+</div>
+     </div>
+     <script src="script.js"></script>
 </body>
 </html>
